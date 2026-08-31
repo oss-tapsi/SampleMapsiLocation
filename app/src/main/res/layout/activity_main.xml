@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtLocationPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnGetLocationPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Location Permission"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/txtLocationGpsEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="32dp"
+            />
+
+        <Button
+            android:id="@+id/btnGpsLocationTurnOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn On Gps"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/txtLocationSdkStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="32dp"
+            />
+
+        <Button
+            android:id="@+id/btnGetSingleLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Single Location"
+            android:layout_marginTop="32dp"/>
+
+
+        <Button
+            android:id="@+id/btnStartGetIntervallyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Get Interval Location"
+            android:layout_marginTop="32dp"/>
+
+
+        <Button
+            android:id="@+id/btnStopGetIntervallyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Get Interval Location"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
